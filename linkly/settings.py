@@ -50,7 +50,8 @@ INSTALLED_APPS = [
     "corsheaders",
     "django_filters",
     "channels",
-    'accounts'
+    'accounts',
+    'users'
 ]
 
 MIDDLEWARE = [
