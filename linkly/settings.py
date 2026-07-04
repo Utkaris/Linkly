@@ -51,7 +51,8 @@ INSTALLED_APPS = [
     "django_filters",
     "channels",
     'accounts',
-    'users'
+    'users',
+    'chat'
 ]
 
 MIDDLEWARE = [
