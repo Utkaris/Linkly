@@ -32,6 +32,10 @@ DEBUG = os.getenv("DEBUG","True")=="True"
 
 ALLOWED_HOSTS = ["*"]
 
+CSRF_TRUSTED_ORIGINS = [
+    "https://linkly-z1tp.onrender.com",
+]
+
 CORS_ALLOW_ALL_ORIGINS = True
 
 
