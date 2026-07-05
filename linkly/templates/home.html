@@ -1,0 +1,149 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}
+Linkly | Modern Messaging Platform
+{% endblock %}
+
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/home.css' %}">
+{% endblock %}
+
+{% block content %}
+
+<div class="background">
+
+    <div class="blur blur-1"></div>
+
+    <div class="blur blur-2"></div>
+
+    <div class="grid-overlay"></div>
+
+</div>
+
+<header class="navbar">
+
+    <div class="logo">
+
+        LINKLY
+
+    </div>
+
+
+</header>
+
+<section class="hero">
+
+    <div class="hero-left">
+
+        <span class="tag">
+
+            PRODUCTION READY DJANGO PROJECT
+
+        </span>
+
+        <h1>
+
+            Real-Time Messaging
+            <br>
+            Reimagined.
+
+        </h1>
+
+        <p>
+
+            Linkly is a modern messaging platform built using
+            Django, Django REST Framework, Django Channels,
+            PostgreSQL and Redis.
+
+            Designed with scalability,
+            clean architecture and production-level backend
+            practices.
+
+        </p>
+
+        <div class="stats">
+
+            <div>
+
+                <h2>100%</h2>
+
+                <span>Django</span>
+
+            </div>
+
+            <div>
+
+                <h2>WebSocket</h2>
+
+                <span>Real-Time</span>
+
+            </div>
+
+            <div>
+
+                <h2>JWT</h2>
+
+                <span>Authentication</span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="hero-right">
+
+        <div class="dashboard">
+
+            <div class="dashboard-header">
+
+                <div class="dots">
+
+                    <span></span>
+
+                    <span></span>
+
+                    <span></span>
+
+                </div>
+
+                <h4>Linkly Preview</h4>
+
+            </div>
+
+            <div class="chat-preview">
+
+                <div class="message left">
+
+                    Hello 👋
+
+                </div>
+
+                <div class="message right">
+
+                    Welcome to Linkly!
+
+                </div>
+
+                <div class="message left">
+
+                    Real-time chat powered by WebSockets.
+
+                </div>
+
+                <div class="message right">
+
+                    Industry-Level Django Backend 🚀
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+{% endblock %}

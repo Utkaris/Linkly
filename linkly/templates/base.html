@@ -1,0 +1,160 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- ==========================================
+        Meta
+    =========================================== -->
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        http-equiv="X-UA-Compatible"
+        content="IE=edge"
+    >
+
+    <meta
+        name="description"
+        content="Linkly - Modern Real-Time Messaging Platform"
+    >
+
+    <meta
+        name="keywords"
+        content="Linkly, Chat, Messaging, Django, WebSocket"
+    >
+
+    <meta
+        name="author"
+        content="Utkarsh Singh"
+    >
+
+    <!-- ==========================================
+        Title
+    =========================================== -->
+
+    <title>
+
+        {% block title %}
+            Linkly
+        {% endblock %}
+
+    </title>
+
+    <!-- ==========================================
+        Favicon
+    =========================================== -->
+
+    <link
+        rel="icon"
+        href="{% static 'images/favicon.ico' %}"
+    >
+
+    <!-- ==========================================
+        Google Fonts
+    =========================================== -->
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- ==========================================
+        Global Styles
+    =========================================== -->
+
+    <link
+        rel="stylesheet"
+        href="{% static 'css/variables.css' %}"
+    >
+
+    <link
+        rel="stylesheet"
+        href="{% static 'css/base.css' %}"
+    >
+
+    <link
+        rel="stylesheet"
+        href="{% static 'css/animations.css' %}"
+    >
+
+    <link
+        rel="stylesheet"
+        href="{% static 'css/utilities.css' %}"
+    >
+
+    <!-- ==========================================
+        App Specific CSS
+    =========================================== -->
+
+    {% block css %}
+    {% endblock %}
+
+</head>
+
+<body>
+
+    <!-- ==========================================
+        Navbar
+    =========================================== -->
+
+    {% block navbar %}
+    {% endblock %}
+
+    <!-- ==========================================
+        Main Content
+    =========================================== -->
+
+    <main>
+
+        {% block content %}
+        {% endblock %}
+
+    </main>
+
+    <!-- ==========================================
+        Footer
+    =========================================== -->
+
+    {% block footer %}
+    {% endblock %}
+
+    <!-- ==========================================
+        Global JavaScript
+    =========================================== -->
+
+    <script src="{% static 'js/app.js' %}"></script>
+
+    <script src="{% static 'js/utils.js' %}"></script>
+
+    <script src="{% static 'js/api.js' %}"></script>
+
+    <script src="{% static 'js/websocket.js' %}"></script>
+
+    <!-- ==========================================
+        Page Specific JavaScript
+    =========================================== -->
+
+    {% block js %}
+    {% endblock %}
+
+</body>
+
+</html>
